@@ -13,6 +13,7 @@
 		7CA72ED81F9F70FE00F3B8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA72ED71F9F70FE00F3B8B1 /* Assets.xcassets */; };
 		7CA72EDB1F9F70FE00F3B8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA72ED91F9F70FE00F3B8B1 /* LaunchScreen.storyboard */; };
 		7CA72EE51F9F712C00F3B8B1 /* RequestLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA72EE31F9F712C00F3B8B1 /* RequestLocationView.xib */; };
+		7CA72EEC1F9FC7E600F3B8B1 /* scratch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA72EEB1F9FC7E600F3B8B1 /* scratch.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7CA72EDA1F9F70FE00F3B8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA72EDC1F9F70FE00F3B8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CA72EE31F9F712C00F3B8B1 /* RequestLocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestLocationView.xib; sourceTree = "<group>"; };
+		7CA72EEB1F9FC7E600F3B8B1 /* scratch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scratch.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7CA72ED71F9F70FE00F3B8B1 /* Assets.xcassets */,
 				7CA72ED91F9F70FE00F3B8B1 /* LaunchScreen.storyboard */,
 				7CA72EDC1F9F70FE00F3B8B1 /* Info.plist */,
+				7CA72EEB1F9FC7E600F3B8B1 /* scratch.xib */,
 			);
 			path = TmpDJ;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				7CA72EDB1F9F70FE00F3B8B1 /* LaunchScreen.storyboard in Resources */,
 				7CA72EE51F9F712C00F3B8B1 /* RequestLocationView.xib in Resources */,
 				7CA72ED81F9F70FE00F3B8B1 /* Assets.xcassets in Resources */,
+				7CA72EEC1F9FC7E600F3B8B1 /* scratch.xib in Resources */,
 				7CA72ED61F9F70FE00F3B8B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +307,7 @@
 				7CA72EE11F9F70FE00F3B8B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

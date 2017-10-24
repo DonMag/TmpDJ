@@ -47,13 +47,6 @@ class RequestLocationView: UIView {
 	}
 	
 	func setupView() {
-		// move cornerRadius to layoutSubviews...
-//		acceptButton.layer.cornerRadius = acceptButton.frame.height / 2
-	}
-	
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		acceptButton.layer.cornerRadius = acceptButton.frame.height / 2
 	}
 	
 	func fadeIn(completion: @escaping (Bool) -> Void) {
@@ -74,6 +67,13 @@ class RequestLocationView: UIView {
 	
 	@IBAction func rejecttPressed(_ sender: UIButton) {
 		delegate?.denyPermissions()
+	}
+}
+
+class RoundedButton: UIButton {
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		self.layer.cornerRadius = self.bounds.height / 2.0
 	}
 }
 
@@ -115,8 +115,16 @@ class ViewController: UIViewController, HandleLocationPermissionDelegate, CLLoca
 			requestView.setupView()
 			requestView.alpha = 0
 			requestView.delegate = self
+			
+//			if let nView = self.navigationController?.view {
+//				nView.addSubview(requestView)
+//				requestView.translatesAutoresizingMaskIntoConstraints = true
+//				requestView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//			}
+			
 			self.navigationController?.view.addSubview(requestView)
 			requestView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+			
 			UIView.animate(withDuration: 0.5, delay : 1, options: .curveEaseOut, animations: {
 				self.requestView.alpha = 1
 			}, completion: nil)

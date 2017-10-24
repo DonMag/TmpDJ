@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </view>
+        <view contentMode="scaleToFill" id="CLH-oY-dUW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yr6-up-5Vy">
+                    <rect key="frame" x="20" y="103" width="335" height="461"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="H5z-d8-6wg">
+                            <rect key="frame" x="68" y="0.0" width="200" height="267"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Allow Location Services?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa6-1A-v3x">
+                            <rect key="frame" x="48" y="287" width="240" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbG-cP-LWv">
+                            <rect key="frame" x="0.0" y="331" width="335" height="0.0"/>
+                            <string key="text">Letting Capiche! use your location ensures the most stramlined connecting experience, and is used only to locate classes in your nearest proximity.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJZ-1d-OmF">
+                            <rect key="frame" x="18" y="351" width="299" height="45"/>
+                            <color key="backgroundColor" red="0.1019607843" green="0.40000000000000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="ffh-c0-2BV"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="h3I-c4-aKD"/>
+                            </constraints>
+                            <state key="normal" title="Sure thing!">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl1-Zi-nfb">
+                            <rect key="frame" x="18" y="416" width="299" height="45"/>
+                            <state key="normal" title="Not right now">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VJZ-1d-OmF" firstAttribute="width" secondItem="yr6-up-5Vy" secondAttribute="width" multiplier="0.9" constant="-2.75" id="cF6-mr-r7A"/>
+                        <constraint firstItem="pl1-Zi-nfb" firstAttribute="height" secondItem="VJZ-1d-OmF" secondAttribute="height" id="jFJ-7H-lbF"/>
+                        <constraint firstItem="pl1-Zi-nfb" firstAttribute="width" secondItem="VJZ-1d-OmF" secondAttribute="width" id="jdL-Ab-U6W"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="oWs-7q-DQ9"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0078431372550000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="yr6-up-5Vy" firstAttribute="centerX" secondItem="CLH-oY-dUW" secondAttribute="centerX" id="6Tf-mp-ASL"/>
+                <constraint firstItem="yr6-up-5Vy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CLH-oY-dUW" secondAttribute="top" constant="8" id="E51-Ea-H8D"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yr6-up-5Vy" secondAttribute="bottom" constant="8" id="WP9-MG-LV7"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yr6-up-5Vy" secondAttribute="trailing" constant="20" id="Zmx-Fw-VRI"/>
+                <constraint firstItem="yr6-up-5Vy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CLH-oY-dUW" secondAttribute="leading" constant="20" id="aWZ-FN-jib"/>
+                <constraint firstItem="yr6-up-5Vy" firstAttribute="centerY" secondItem="CLH-oY-dUW" secondAttribute="centerY" id="efo-hV-mLP"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="200" height="267"/>
+    </resources>
+</document>
