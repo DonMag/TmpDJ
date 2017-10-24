@@ -31,17 +31,17 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3X2-XL-WSQ">
-                            <rect key="frame" x="28" y="76" width="319" height="101.5"/>
-                            <string key="text">Here is a paragraph of text. I don't feel like typing anything that actually makes sense, so I'll just type enough so the text in this label wraps to a line or two or three.</string>
+                            <rect key="frame" x="28" y="76" width="319" height="81.5"/>
+                            <string key="text">Letting Capiche! use your location ensures the most stramlined connecting experience, and is used only to locate classes in your nearest proximity.</string>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBY-pk-WjY">
-                            <rect key="frame" x="19" y="209.5" width="337" height="60"/>
+                            <rect key="frame" x="19" y="189.5" width="337" height="70"/>
                             <color key="backgroundColor" red="0.10196078431372549" green="0.40000000000000002" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="60" id="iiG-6U-qK6"/>
+                                <constraint firstAttribute="height" constant="70" id="iiG-6U-qK6"/>
                             </constraints>
                             <state key="normal" title="Sure thing!">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,10 +51,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUI-Va-VCf">
-                            <rect key="frame" x="19.5" y="285.5" width="337" height="60"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="60" id="Jhf-aP-cpk"/>
-                            </constraints>
+                            <rect key="frame" x="19.5" y="275.5" width="337" height="70"/>
                             <state key="normal" title="Not right now">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -66,6 +63,7 @@
                     <constraints>
                         <constraint firstItem="EUI-Va-VCf" firstAttribute="centerX" secondItem="u8y-UG-tDB" secondAttribute="centerX" id="13f-jU-cG5"/>
                         <constraint firstItem="3X2-XL-WSQ" firstAttribute="width" secondItem="u8y-UG-tDB" secondAttribute="width" multiplier="0.85" id="74F-8s-MX3"/>
+                        <constraint firstItem="EUI-Va-VCf" firstAttribute="height" secondItem="kBY-pk-WjY" secondAttribute="height" id="Evw-ge-3SK"/>
                         <constraint firstItem="VBf-Gz-Avc" firstAttribute="centerX" secondItem="u8y-UG-tDB" secondAttribute="centerX" id="I7n-Ym-wtv"/>
                         <constraint firstItem="3X2-XL-WSQ" firstAttribute="top" secondItem="VBf-Gz-Avc" secondAttribute="bottom" constant="32" id="P44-0W-iyx"/>
                         <constraint firstItem="kBY-pk-WjY" firstAttribute="top" secondItem="3X2-XL-WSQ" secondAttribute="bottom" constant="32" id="ScD-Jv-WgO"/>

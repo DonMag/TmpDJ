@@ -47,7 +47,8 @@ class RequestLocationView: UIView {
 	}
 	
 	func setupView() {
-		//		acceptButton.layer.cornerRadius = acceptButton.frame.height / 2
+		// move cornerRadius to layoutSubviews...
+//		acceptButton.layer.cornerRadius = acceptButton.frame.height / 2
 	}
 	
 	override func layoutSubviews() {
@@ -115,6 +116,7 @@ class ViewController: UIViewController, HandleLocationPermissionDelegate, CLLoca
 			requestView.alpha = 0
 			requestView.delegate = self
 			self.navigationController?.view.addSubview(requestView)
+			requestView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 			UIView.animate(withDuration: 0.5, delay : 1, options: .curveEaseOut, animations: {
 				self.requestView.alpha = 1
 			}, completion: nil)
